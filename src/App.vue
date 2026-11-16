@@ -38,7 +38,7 @@
                 class="border border-cyan text-white px-6 py-2 rounded-2xl hover:bg-cyan transition-all duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(0,191,255,0.8)] flex items-center justify-center">Contáctame</a>
             </div>
             <div class="flex space-x-4 mt-8">
-              <a href="https://github.com/ArmandoCasanova" target="_blank"
+              <a href="https://github.com/arcaldev" target="_blank" rel="noopener noreferrer"
                 class="w-10 h-10 bg-transparent border-2 border-cyan rounded-full flex items-center justify-center text-cyan hover:bg-cyan hover:text-white hover:scale-110 hover:shadow-[0_0_15px_rgba(0,191,255,0.8)] transition-all duration-300">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -47,7 +47,7 @@
                   </path>
                 </svg>
               </a>
-              <a href="https://www.linkedin.com/in/armando-casanova-8680b2370" target="_blank"
+              <a href="https://www.linkedin.com/in/armando-casanova-8680b2370" target="_blank" rel="noopener noreferrer"
                 class="w-10 h-10 bg-transparent border-2 border-cyan rounded-full flex items-center justify-center text-cyan hover:bg-cyan hover:text-white hover:scale-110 hover:shadow-[0_0_15px_rgba(0,191,255,0.8)] transition-all duration-300">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -141,7 +141,7 @@
               class="bg-white bg-opacity-5 rounded-2xl shadow-lg p-6 flex flex-col items-center border-2 border-cyan transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_0_rgba(0,191,255,0.5)]">
               <div
                 class="w-20 h-20 mb-4 rounded-full border-2 border-cyan bg-white overflow-hidden flex items-center justify-center">
-                <img src="/src/assets/images/tec.png" alt="ITM" class="w-full h-full object-cover" />
+                <img :src="tecImage" alt="ITM" class="w-full h-full object-cover" />
               </div>
               <h3 class="text-xl font-bold text-cyan mb-1 text-center">Ingeniería en Sistemas Computacionales</h3>
               <span class="text-gray-400 text-sm mb-2">2022 - Actualidad</span>
@@ -152,7 +152,7 @@
               class="bg-white bg-opacity-5 rounded-2xl shadow-lg p-6 flex flex-col items-center border-2 border-cyan transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_0_rgba(0,191,255,0.5)]">
               <div
                 class="w-20 h-20 mb-4 rounded-full border-2 border-cyan bg-white overflow-hidden flex items-center justify-center">
-                <img src="/src/assets/images/english.png" alt="english" class="w-full h-full object-cover" />
+                <img :src="englishImage" alt="english" class="w-full h-full object-cover" />
               </div>
               <h3 class="text-xl font-bold text-cyan mb-1 text-center">Inglés B2</h3>
               <span class="text-gray-400 text-sm mb-2">2019 - 2025</span>
@@ -163,7 +163,7 @@
               class="bg-white bg-opacity-5 rounded-2xl shadow-lg p-6 flex flex-col items-center border-2 border-cyan transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_0_rgba(0,191,255,0.5)]">
               <div
                 class="w-20 h-20 mb-4 rounded-full border-2 border-cyan bg-white overflow-hidden flex items-center justify-center">
-                <img src="/src/assets/images/coursera.png" alt="Coursera" class="w-full h-full object-cover" />
+                <img :src="courseraImage" alt="Coursera" class="w-full h-full object-cover" />
               </div>
               <h3 class="text-xl font-bold text-cyan mb-1 text-center">Certificación en Gestión de Proyectos</h3>
               <span class="text-gray-400 text-sm mb-2">2023</span>
@@ -217,6 +217,9 @@ import nayaImage from './assets/images/naya.png';
 import syncteamImage from './assets/images/syncteam.png';
 import tailsUpImage from './assets/images/tails.png';
 import codeImage from './assets/images/code4.png';
+import tecImage from './assets/images/tec.png';
+import englishImage from './assets/images/english.png';
+import courseraImage from './assets/images/coursera.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TechStack from './components/TechStack.vue';
